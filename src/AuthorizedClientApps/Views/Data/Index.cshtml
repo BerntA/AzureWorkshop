@@ -1,0 +1,18 @@
+﻿@model List<string>
+
+@{
+    ViewData["Title"] = "Data";
+}
+
+<table class="table">
+    <thead>
+        <tr><th>Folder Name</th></tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+        <tr>
+            <td>@item</td>
+        </tr>
+    }
+    </tbody>
+</table>
